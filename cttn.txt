@@ -1,1 +1,56 @@
-https://yeinnarayana.notion.site/ReactJS-for-Designer-BWAFEHO-upgrade-b3f9d13f5d944c30b52c7ee2271cb7d5
+https://yeinnarayana.notion.site/ReactJS-for-Designer-BWAFEHO-upgrade-b3f9d13f5d944c30b52c7ee2271cb7d5 -> notion
+
+
+rencana struktur folder:
+src/
+├── assets/
+│   ├── images/             # Gambar atau ikon statis
+│   ├── fonts/              # Font custom
+│   └── styles/             # File CSS global (misalnya Tailwind config atau overrides)
+│       ├── index.css       # Entry point untuk Tailwind CSS
+│       └── overrides.css   # Custom CSS (opsional)
+│
+├── components/
+│   ├── common/             # Komponen yang sering digunakan di seluruh aplikasi (e.g., Button, Modal)
+│   │   ├── Button.jsx
+│   │   └── Modal.jsx
+│   ├── layout/             # Komponen layout (e.g., Header, Footer, Sidebar)
+│   │   ├── Header.jsx
+│   │   ├── Footer.jsx
+│   │   └── Sidebar.jsx
+│   └── specific/           # Komponen spesifik untuk halaman tertentu
+│       ├── DashboardCard.jsx
+│       └── ProfileAvatar.jsx
+│
+├── hooks/                  # Custom React hooks
+│   ├── useAuth.js
+│   └── useFetch.js
+│
+├── pages/                  # Halaman utama aplikasi
+│   ├── Home.jsx
+│   ├── About.jsx
+│   ├── Dashboard/
+│   │   ├── Dashboard.jsx
+│   │   ├── Analytics.jsx
+│   │   └── Settings.jsx
+│   └── NotFound.jsx
+│
+├── services/               # API service calls (e.g., Axios config, REST/GraphQL functions)
+│   ├── api.js
+│   └── authService.js
+│
+├── store/                  # State management (e.g., Redux, Context API)
+│   ├── store.js
+│   └── slices/
+│       ├── authSlice.js
+│       └── userSlice.js
+│
+├── utils/                  # Helper functions atau utilities
+│   ├── formatDate.js
+│   ├── calculatePrice.js
+│   └── constants.js
+│
+├── App.jsx                 # Root component
+├── index.js                # Entry point aplikasi
+├── router.js               # Konfigurasi React Router (opsional)
+└── tailwind.config.js      # Konfigurasi Tailwind CSS
